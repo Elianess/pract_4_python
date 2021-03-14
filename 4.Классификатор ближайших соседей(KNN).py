@@ -8,6 +8,7 @@ from sklearn.neighbors import KNeighborsClassifier
 def Image_display(i):
     plt.imshow(digit['images'][i],cmap = 'Greys_r')
     plt.show()
+    
 #загружаем набор данных MNIST
 digit = load_digits()
 digit_d = pd.DataFrame(digit['data'][0:1600]) #используем 1600 изображений для обучающего образца, оставшиеся 197 сохранены для тестирования
